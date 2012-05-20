@@ -29,15 +29,33 @@ body { padding-top: 60px; }
 // Example:
 // @linkColor: #ff0000;
 
-@brandColor:		 #B2A493;
-
 /* basic colors */
 /* http://blog.12spokes.com/web-design-development/simple-css-color-management-with-sass/ */
-@brandColorLight:	 lighten( @brandColor, 10% );
-@brandColorLighter:	 lighten( @brandColor, 20% );
-@brandColorDark:	 darken( @brandColor, 10% );
-@brandColorDarker:	 darken( @brandColor, 20% );
+@brandColor:		 #B2A493;
+@brandColorLight:	 lighten(@brandColor, 10% );
+@brandColorLighter:	 lighten(@brandColor, 20% );
+@brandColorDark:	 darken(@brandColor, 10% );
+@brandColorDarker:	 darken(@brandColor, 20% );
 
+@actionColor:            #bd362f;
+@actionColorLight:	 lighten(@brandColor, 10% );
+@actionColorLighter:	 lighten(@brandColor, 20% );
+@actionColorDark:	 darken(@brandColor, 10% );
+@actionColorDarker:	 darken(@brandColor, 20% );
+
+@functionColor:          #f2f2f2;
+@functionColorLight:	 lighten(@brandColor, 10% );
+@functionColorLighter:	 lighten(@brandColor, 20% );
+@functionColorDark:	 darken(@brandColor, 10% );
+@functionColorDarker:	 darken(@brandColor, 20% );
+
+@alertColor:             #b22727;
+@alertColorLight:	 lighten(@brandColor, 10% );
+@alertColorLighter:	 lighten(@brandColor, 20% );
+@alertColorDark:	 darken(@brandColor, 10% );
+@alertColorDarker:	 darken(@brandColor, 20% );
+
+/* Overrides */
 @navbarBackground: @brandColor;
 @navbarBackgroundHighlight: @brandColorLight;
 @navbarLinkColor: white;
@@ -46,6 +64,13 @@ body { padding-top: 60px; }
 
 @logoFont: 'Comfortaa', sans-serif;
 
+@btnPrimaryBackground: @actionColor;
+/* @btnPrimaryBackgroundHighlight: @actionColorDarker; */
+
 .navbar {
     font-family: @logoFont;
+}
+
+body {
+    background: url('greyfloral.png');
 }

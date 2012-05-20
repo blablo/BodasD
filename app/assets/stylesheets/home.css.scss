@@ -1,3 +1,39 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.welcome {
+    background-color: rgba(255,255,255, 0.9);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+    height: 410px;
+    position: relative;
+    }
+    .welcome p {
+	padding-left: 12px;
+	padding-right: 12px;	
+    }
+    .welcome p.announce{
+	font-size: 26px;
+	line-height: 30px;
+	font-weight: bold;
+    }
+    .welcome p.hint{
+	position:absolute; top:80%;
+    }
+    .welcome img {
+	width: 550px;
+	height: 400px;
+    }
+
+.start-button {
+    margin-top: 20px;
+    text-align: center;
+    }
+    .start-button a {
+	width: 400px;
+	height: 40px;
+	font-size: 20px;
+	font-family: 'Comfortaa', sans-serif;
+    }
