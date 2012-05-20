@@ -1,4 +1,6 @@
 WeddingCourier::Application.routes.draw do
+  resources :weddings
+
   devise_for :couples
 
   root :to => 'home#index'

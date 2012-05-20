@@ -1,0 +1,15 @@
+<%= simple_form_for(@wedding) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :couple_id %>
+    <%= f.input :title %>
+    <%= f.input :story %>
+    <%= f.input :groom_name %>
+    <%= f.input :bride_name %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, :class => "btn btn-primary btn-large" %>
+  </div>
+<% end %>

@@ -1,0 +1,40 @@
+<% content_for :title do %>
+  <%= @wedding.title %>Z
+<% end %>
+
+<p id="notice"><%= notice %></p>
+
+<div class="span12">
+  <h1 style="text-align:center">
+    <%= @wedding.title %>
+  </h1>
+</div>
+<br />
+
+<div class="row">
+  <div class="span6 withBackground couple" style="text-align:left">
+    <p style="text-align:left">
+      <h2>The Bride: <%= @wedding.bride_name %></h2>
+      <%= image_tag 'eri.png' %>
+    </p>
+  </div>
+  <div class="span6 withBackground couple" style="text-align:right">
+    <p style="text-align:right">
+      <h2>The Groom: <%= @wedding.groom_name %></h2>
+      <%= image_tag 'joshua.png' %>
+    </p>
+  </div>
+</div>
+
+<div class="withBackground">
+  <h2>Our story</h2>
+  <%= @wedding.story %>
+  <p class="story">
+    Put a bird on it wayfarers locavore, DIY cosby sweater twee organic. Et odio occaecat laborum. Polaroid scenester wes anderson DIY, thundercats marfa pariatur forage photo booth. Aliquip nisi lomo do velit, gluten-free pop-up iphone. Deserunt cliche ullamco odio kale chips keytar, skateboard aute farm-to-table cosby sweater wolf. Single-origin coffee put a bird on it scenester bicycle rights authentic. Laborum PBR marfa food truck cred aliquip, adipisicing direct trade velit put a bird on it seitan gentrify farm-to-table 8-bit.
+
+    Seitan portland eiusmod narwhal. Before they sold out organic sriracha tumblr chambray aliqua fanny pack, minim 8-bit vero. Cred godard next level, thundercats ullamco nisi kale chips. Brunch fanny pack sartorial, echo park eu fap aesthetic. Freegan pitchfork incididunt, assumenda typewriter keytar commodo put a bird on it fixie tofu cliche veniam chillwave aesthetic esse. Ethnic lomo delectus esse cliche. Gastropub brooklyn nostrud before they sold out iphone four loko elit, selvage adipisicing eiusmod.
+  </p>
+</div>
+
+<%= link_to 'Edit', edit_wedding_path(@wedding) %> |
+<%= link_to 'Back', weddings_path %>
