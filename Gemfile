@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
+gem 'devise'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
+gem "capybara", :group => [:development, :test]
+gem "rspec-rails", :group => [:development, :test]
+gem "sqlite3", :group => [:development, :test]
+gem "thin"
+gem "simple_form"
+gem 'jquery-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,9 +20,9 @@ group :assets do
   # gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem "twitter-bootstrap-rails"
+  gem "therubyracer"
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -37,13 +39,3 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem "capybara", :group => [:development, :test]
-gem "rspec-rails", :group => [:development, :test]
-gem "sqlite3", :group => [:development, :test]
-gem "thin"
-group :assets do
-  gem "twitter-bootstrap-rails"
-  gem "therubyracer"
-end
-
-gem "simple_form"
